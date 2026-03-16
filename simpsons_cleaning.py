@@ -1,3 +1,5 @@
+import re
+
 import pandas as pd
 import numpy as np
 import re
@@ -6,11 +8,17 @@ import os
 os.makedirs("outputs", exist_ok=True)
 
 
-df = pd.read_csv("simpsons_episodes.csv")
+df = pd.read_csv("data/simpsons_episodes.csv")
 
 
 cols_to_drop = ["image_url", "video_url"]
 df.drop(columns=cols_to_drop, inplace=True)
+
+
+# Fix malformed titles (Season 28 rows)
+
+# Three Season-28 titles contain leftover Wikipedia citation
+# We strip the trailing quote + bracket reference.
 
 
 n_fixed = 0
