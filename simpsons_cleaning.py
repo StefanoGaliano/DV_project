@@ -92,7 +92,7 @@ print(f"Dtypes:\n{df.dtypes.to_string()}\n")
 
 
 
-chars = pd.read_csv("simpsons_characters.csv")
+chars = pd.read_csv("data/simpsons_characters.csv")
 
 
 print(f"Characters raw shape: {chars.shape}")
@@ -130,7 +130,7 @@ print(f"Gender distribution:\n{chars['gender'].value_counts(dropna=False)}\n")
 
 
 
-locs = pd.read_csv("simpsons_locations.csv")
+locs = pd.read_csv("data/simpsons_locations.csv")
 
 
 print(f"Locations raw shape: {locs.shape}")
