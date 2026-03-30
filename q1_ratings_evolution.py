@@ -273,11 +273,13 @@ viz3 = (
 # Save to HTML
 # ─────────────────────────────────────────────────────────────────────────────
 
-viz1.save("q1_viz1_scatter_rolling.html")
-viz2.save("q1_viz2_season_bars.html")
-viz3.save("q1_viz3_heatmap.html")
+viz1.save("outputs/interactive_visualizations/q1_viz1_scatter_rolling.html")
+viz2.save("outputs/interactive_visualizations/q1_viz2_season_bars.html")
+viz3.save("outputs/interactive_visualizations/q1_viz3_heatmap.html")
 
 print("Q1 charts saved:")
 print("  q1_viz1_scatter_rolling.html")
+print("  q1_viz2_season_bars.html")
+print("  q1_viz3_heatmap.html")
 print("  q1_viz2_season_bars.html")
 print("  q1_viz3_heatmap.html")
