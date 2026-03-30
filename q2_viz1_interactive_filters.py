@@ -466,6 +466,6 @@ viz1 = alt.vconcat(
 # 12. SAVE
 # ─────────────────────────────────────────────────────────────────────────────
 
-out = "outputs/q2_viz1_interactive_filters.html"
+out = "outputs/interactive_visualizations/q2_viz1_interactive_filters.html"
 viz1.save(out)
 print(f"Viz 1 saved -> {out}")
