@@ -87,6 +87,9 @@ season_agg = df.groupby("season").agg(
 ).round(3).reset_index()
 df = df.merge(season_agg, on="season", how="left")
 
+#DROP SEASON 28 (only 1 episode, outlier ratings/viewership, and incomplete data)
+df = df[df["season"] != 28]
+
 print(f"\nEpisodes dataset final shape: {df.shape}")
 print(f"Dtypes:\n{df.dtypes.to_string()}\n")
 
@@ -379,8 +382,6 @@ assert df["number"].isnull().mean() < 0.05, \
 
 assert df["episode_id"].isnull().mean() < 0.01, \
     "More than 1 % of episode_id values are null – investigate!"
-
-
 
 
 # 12. MISSING DATA SUMMARY
