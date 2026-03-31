@@ -1,3 +1,6 @@
+
+import streamlit as st
+
 from question_1 import chart_q1_clean as q1_chart
 from question_2 import chart_q2 as q2_chart
 from question_3 import chart_q3 as q3_chart
@@ -5,7 +8,8 @@ from question_4 import chart_q4 as q4_chart
 from question_5 import chart_q5 as q5_chart
 from question_6 import chart_q6 as q6_chart
 
-import streamlit as st
+from conf import SIMPSONS_COLOR_SCHEME
+
 
 
 st.markdown(

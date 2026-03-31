@@ -3,15 +3,15 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
-from conf import HOMER_COLOR_SCHEME
+from conf import SIMPSONS_COLOR_SCHEME
 
 warnings.filterwarnings("ignore")
 os.makedirs("outputs", exist_ok=True)
 
 # ─── colour palette (Okabe-Ito, colour-blind safe) ────────────────────────────
-PRIMARY = HOMER_COLOR_SCHEME["primary"]
-SECONDARY = HOMER_COLOR_SCHEME["secondary"]
-TERTIARY = HOMER_COLOR_SCHEME["tertiary"]
+PRIMARY = SIMPSONS_COLOR_SCHEME["primary"]
+SECONDARY = SIMPSONS_COLOR_SCHEME["secondary"]
+TERTIARY = SIMPSONS_COLOR_SCHEME["tertiary"]
 
 primary_color = alt.value(PRIMARY)
 secondary_color = alt.value(SECONDARY)
@@ -66,7 +66,7 @@ eps_v  = eps.dropna(subset=["us_viewers_in_millions"]).copy()
 # ─── 2. STD BAND (Viewership) ────────────────────────────────────────────────
 band_v = (
     alt.Chart(season.dropna(subset=["avg_viewers", "std_viewers"]))
-    .mark_area(opacity=0.15)
+    .mark_area(opacity=0.25)
     .encode(
         x=alt.X("season:O", title="Season", axis=alt.Axis(labelAngle=0, titleFontSize=AXIS_FONT)),
         y=alt.Y("min_v:Q", title="US Viewers (millions)", scale=alt.Scale(domain=[0, 35])),
@@ -105,7 +105,7 @@ line_v = (
 # ─── 6. DATA LABELS (Consistent positioning above dots) ────────────────────
 lbl_v = (
     alt.Chart(season.dropna(subset=["avg_viewers"]))
-    .mark_text(fontSize=9, fontWeight="bold", dy=-12, color="#333333")
+    .mark_text(fontSize=9, dy=-12, color="#FFFFFF")
     .encode(
         x=alt.X("season:O"),
         y=alt.Y("avg_viewers:Q"),
@@ -127,7 +127,7 @@ chart_q2 = (
                 "Numbers above dots = Avg Viewers (Millions) · Vertical Rules = Min-Max Range per Season",
                 "Area = STD Range"
             ],
-            fontSize=TITLE_FONT, subtitleFontSize=10, subtitleColor="#444",
+            fontSize=TITLE_FONT, subtitleFontSize=10, subtitleColor="#FF82C1",
         ),
     )
     .configure_view(stroke=None)

@@ -3,17 +3,17 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
-from conf import HOMER_COLOR_SCHEME
+from conf import SIMPSONS_COLOR_SCHEME
 from util import gradient
 
 warnings.filterwarnings("ignore")
 os.makedirs("outputs", exist_ok=True)
 
 # ─── colour palette (Okabe-Ito, colour-blind safe) ────────────────────────────
-PRIMARY = HOMER_COLOR_SCHEME["primary"]
-SECONDARY = HOMER_COLOR_SCHEME["secondary"]
-TERTIARY = HOMER_COLOR_SCHEME["tertiary"]
-ACCENT = HOMER_COLOR_SCHEME["alternative_accent"]
+PRIMARY = SIMPSONS_COLOR_SCHEME["primary"]
+SECONDARY = SIMPSONS_COLOR_SCHEME["secondary"]
+TERTIARY = SIMPSONS_COLOR_SCHEME["tertiary"]
+ACCENT = SIMPSONS_COLOR_SCHEME["alternative_accent"]
 
 # C_GOLDEN  = "#E69F00"
 # C_MIDDLE  = "#0072B2"
@@ -208,7 +208,7 @@ if season_lines is not None:
     # 2. BARS (Characters)
     bar_chars = (
         alt.Chart(season_filtered)
-        .mark_bar(opacity=0.4, cornerRadiusTopLeft=3, cornerRadiusTopRight=3)
+        .mark_bar(opacity=0.8, cornerRadiusTopLeft=3, cornerRadiusTopRight=3)
         .encode(
             x=alt.X("season:O", title="Season",
                     axis=alt.Axis(labelAngle=0, titleFontSize=AXIS_FONT)),
@@ -225,7 +225,7 @@ if season_lines is not None:
     # 3. BAR LABELS (Top of bars)
     bar_lbl_q6 = (
         alt.Chart(season_filtered)
-        .mark_text(fontSize=8, dy=-8, fontWeight="bold", color="#333")
+        .mark_text(fontSize=8, dy=-8, color="#FFFFFF")
         .encode(
             x=alt.X("season:O"),
             y=alt.Y("avg_chars:Q"),
@@ -267,7 +267,7 @@ if season_lines is not None:
         .properties(
             width=780, height=400,
             title=alt.TitleParams(
-                "Q6 — Production Complexity Trends (Seasons 1-26)",
+                "Extra — Production Complexity Trends (Seasons 1-26) - Did they stop trying?",
                 subtitle=[
                     "Bars = Avg Characters per Episode · Orange Line = Avg Locations per Episode (Normalized Scale)",
                     "Labels represent actual counts · Seasons 27-28 excluded due to missing script data."

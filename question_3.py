@@ -4,16 +4,16 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
-from conf import HOMER_COLOR_SCHEME
+from conf import SIMPSONS_COLOR_SCHEME
 from util import gradient
 
 warnings.filterwarnings("ignore")
 os.makedirs("outputs", exist_ok=True)
 
 # ─── colour palette (Okabe-Ito, colour-blind safe) ────────────────────────────
-PRIMARY = HOMER_COLOR_SCHEME["primary"]
-SECONDARY = HOMER_COLOR_SCHEME["secondary"]
-TERTIARY = HOMER_COLOR_SCHEME["tertiary"]
+PRIMARY = SIMPSONS_COLOR_SCHEME["primary"]
+SECONDARY = SIMPSONS_COLOR_SCHEME["secondary"]
+TERTIARY = SIMPSONS_COLOR_SCHEME["tertiary"]
 
 primary_color = alt.value(PRIMARY)
 secondary_color = alt.value(SECONDARY)
@@ -89,7 +89,7 @@ r_value = np.corrcoef(x_vals, y_vals)[0, 1]
 # --- 2. Main Scatter Plot ---
 scatter = (
     alt.Chart(eps_rv)
-    .mark_point(size=60, filled=True)
+    .mark_point(size=60, opacity=0.8, filled=True)
     .encode(
         x=alt.X("us_viewers_in_millions:Q", title="US Viewers (millions)",
                 axis=alt.Axis(titleFontSize=AXIS_FONT)),
@@ -117,7 +117,7 @@ reg_eq_df = pd.DataFrame([{
 
 reg_annot = (
     alt.Chart(pd.DataFrame([{"x": 22, "y": 4.2, "label": f"r = {r_value:.2f}"}]))
-    .mark_text(fontSize=12, color="#444", fontWeight="bold")
+    .mark_text(fontSize=12, color="#FFFFFF", fontWeight="bold")
     .encode(x="x:Q", y="y:Q", text="label:N")
 )
 
@@ -133,7 +133,7 @@ chart_q3 = (
                 "The dashed line shows the general downward trend as the show aged.",
                 "Bluer points represent later seasons, while yellower points are from earlier seasons.",
             ],
-            fontSize=TITLE_FONT, subtitleFontSize=10, subtitleColor="#444",
+            fontSize=TITLE_FONT, subtitleFontSize=10, subtitleColor="#FF82C1",
         ),
     )
     .configure_legend(

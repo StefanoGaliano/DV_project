@@ -3,17 +3,17 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
-from conf import HOMER_COLOR_SCHEME
+from conf import SIMPSONS_COLOR_SCHEME
 from util import gradient
 
 warnings.filterwarnings("ignore")
 os.makedirs("outputs", exist_ok=True)
 
 # ─── colour palette (Okabe-Ito, colour-blind safe) ────────────────────────────
-PRIMARY = HOMER_COLOR_SCHEME["primary"]
-SECONDARY = HOMER_COLOR_SCHEME["secondary"]
-TERTIARY = HOMER_COLOR_SCHEME["tertiary"]
-ACCENT = HOMER_COLOR_SCHEME["alternative_accent"]
+PRIMARY = SIMPSONS_COLOR_SCHEME["primary"]
+SECONDARY = SIMPSONS_COLOR_SCHEME["secondary"]
+TERTIARY = SIMPSONS_COLOR_SCHEME["tertiary"]
+ACCENT = SIMPSONS_COLOR_SCHEME["alternative_accent"]
 
 primary_color = alt.value(PRIMARY)
 secondary_color = alt.value(SECONDARY)
@@ -49,7 +49,7 @@ heatmap = (
         color=alt.Color(
             "us_viewers_in_millions:Q",
             title="Viewers (M)",
-            scale=alt.Scale(scheme="blues"),
+            scale=alt.Scale(domain=[2.5, 33.6], range=gradient(SIMPSONS_COLOR_SCHEME["accent"], SIMPSONS_COLOR_SCHEME["tertiary"], 5)),
             legend=None,
         ),
     )
@@ -66,7 +66,7 @@ hm_text = (
         color=alt.condition(
             alt.datum.us_viewers_in_millions > 15,
             alt.value("white"),
-            alt.value(ACCENT),
+            alt.value("#424F46"),
         ),
     )
 )
@@ -84,7 +84,7 @@ chart_q5 = (
                 "Cell colour = US viewers (blue, darker = more viewers) · "
                 "Cell text = US viewers (millions)",
             ],
-            fontSize=TITLE_FONT, subtitleFontSize=9, subtitleColor="#555",
+            fontSize=TITLE_FONT, subtitleFontSize=9, subtitleColor="#FF82C1",
         ),
     )
 )

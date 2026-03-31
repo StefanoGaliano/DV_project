@@ -4,15 +4,15 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
-from conf import HOMER_COLOR_SCHEME
+from conf import SIMPSONS_COLOR_SCHEME
 
 warnings.filterwarnings("ignore")
 os.makedirs("outputs", exist_ok=True)
 
-PRIMARY = HOMER_COLOR_SCHEME["primary"]
-SECONDARY = HOMER_COLOR_SCHEME["secondary"]
-TERTIARY = HOMER_COLOR_SCHEME["tertiary"]
-ACCENT = HOMER_COLOR_SCHEME["alternative_accent"]
+PRIMARY = SIMPSONS_COLOR_SCHEME["primary"]
+SECONDARY = SIMPSONS_COLOR_SCHEME["secondary"]
+TERTIARY = SIMPSONS_COLOR_SCHEME["tertiary"]
+ACCENT = SIMPSONS_COLOR_SCHEME["alternative_accent"]
 
 WEEKDAY_ORDER = ["Thursday", "Sunday"]
 WEEKDAY_COLOURS = [PRIMARY, TERTIARY]
@@ -65,10 +65,10 @@ avg = (
     base.
     transform_aggregate(mean_acc="mean(us_viewers_in_millions)", groupby=["air_dayofweek"])
     .transform_filter(alt.FieldOneOfPredicate(field="air_dayofweek", oneOf=thu_sun))
-    .mark_text(fontSize=15, fontWeight="bold", color=ACCENT)
+    .mark_text(fontSize=15, fontWeight="bold")
     .encode(
         y=alt.Y("mean_acc:Q", title="US Viewers (Millions)"),
-        color=alt.value(ACCENT),
+        color=alt.value("#FFFFFF"),
         text=alt.Text("mean_acc:Q", format=".1f"),
     )
 )
@@ -90,10 +90,10 @@ chart_q4 = (
             "Q4 — Viewership Distribution by Airing Day",
             subtitle=[
                 "Violion plot showing distribution of US viewers for episodes aired on Thursdays and Sundays.",
-                "Numbers represent average viewership for each day."
+                "Numbers represent average viewership for each day.",
                 "Episodes aired on other days of the week are not shown due to insufficient data."
             ],
-            fontSize=TITLE_FONT, subtitleFontSize=10, subtitleColor="#444",
+            fontSize=TITLE_FONT, subtitleFontSize=10, subtitleColor="#FF82C1",
         ),
     )
 )

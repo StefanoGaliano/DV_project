@@ -3,16 +3,16 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
-from conf import HOMER_COLOR_SCHEME
+from conf import SIMPSONS_COLOR_SCHEME
 
 warnings.filterwarnings("ignore")
 os.makedirs("outputs", exist_ok=True)
 
 # ─── colour palette (Okabe-Ito, colour-blind safe) ────────────────────────────
 
-PRIMARY = HOMER_COLOR_SCHEME["primary"]
-SECONDARY = HOMER_COLOR_SCHEME["secondary"]
-TERTIARY = HOMER_COLOR_SCHEME["tertiary"]
+PRIMARY = SIMPSONS_COLOR_SCHEME["primary"]
+SECONDARY = SIMPSONS_COLOR_SCHEME["secondary"]
+TERTIARY = SIMPSONS_COLOR_SCHEME["tertiary"]
 
 primary_color = alt.value(PRIMARY)
 secondary_color = alt.value(SECONDARY)
@@ -74,7 +74,7 @@ dots_r = (
 # 2. 1-STD deviation band around the season average (as a shaded area)
 band_r = (
     alt.Chart(season.dropna(subset=["avg_rating", "std_rating"]))
-    .mark_area(opacity=0.15)
+    .mark_area(opacity=0.25)
     .encode(
         x=alt.X("season:O"),
         y=alt.Y("min_r:Q"),
@@ -101,7 +101,7 @@ line_r = (
 # --- 4. DATA LABELS (Numbers above every dot) ---
 lbl_dots_r = (
     alt.Chart(season.dropna(subset=["avg_rating"]))
-    .mark_text(fontSize=10, fontWeight="bold", dy=-15, color="#444") 
+    .mark_text(fontSize=10, dy=-15, color="#FFFFFF") 
     .encode(
         x=alt.X("season:O"),
         y=alt.Y("avg_rating:Q"),
@@ -122,7 +122,7 @@ chart_q1_clean = (
                 "Numbers above dots represent average season ratings.",
                 "Line = Season Average · Shaded Area = 1-STD Range"
             ],
-            fontSize=16, subtitleFontSize=11, subtitleColor="#444"
+            fontSize=16, subtitleFontSize=11, subtitleColor="#ff82c1"
         )
     )
     .configure_view(stroke=None)
