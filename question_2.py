@@ -11,7 +11,7 @@ os.makedirs("outputs", exist_ok=True)
 # ─── colour palette (Okabe-Ito, colour-blind safe) ────────────────────────────
 PRIMARY = HOMER_COLOR_SCHEME["primary"]
 SECONDARY = HOMER_COLOR_SCHEME["secondary"]
-TERTIARY = HOMER_COLOR_SCHEME["alternative_accent"]
+TERTIARY = HOMER_COLOR_SCHEME["tertiary"]
 
 primary_color = alt.value(PRIMARY)
 secondary_color = alt.value(SECONDARY)
@@ -82,7 +82,7 @@ band_v = (
 # ─── 4. MIN-MAX RANGE RULES (Vertical whiskers) ─────────────────────────────
 range_v = (
     alt.Chart(season.dropna(subset=["min_viewers", "max_viewers"]))
-    .mark_rule(strokeWidth=1.2, opacity=0.4)
+    .mark_rule(strokeWidth=1.2, opacity=0.8)
     .encode(
         x=alt.X("season:O"),
         y=alt.Y("min_viewers:Q"),

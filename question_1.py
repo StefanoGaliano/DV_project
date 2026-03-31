@@ -12,7 +12,7 @@ os.makedirs("outputs", exist_ok=True)
 
 PRIMARY = HOMER_COLOR_SCHEME["primary"]
 SECONDARY = HOMER_COLOR_SCHEME["secondary"]
-TERTIARY = HOMER_COLOR_SCHEME["alternative_accent"]
+TERTIARY = HOMER_COLOR_SCHEME["tertiary"]
 
 primary_color = alt.value(PRIMARY)
 secondary_color = alt.value(SECONDARY)
@@ -64,7 +64,7 @@ eps_r  = eps.dropna(subset=["imdb_rating"]).copy()
 # 1. Individual Episode Dots (Faint Background)
 dots_r = (
     alt.Chart(eps_r)
-    .mark_circle(size=15, opacity=0.12, color=TERTIARY)
+    .mark_circle(size=15, opacity=0.33, color=TERTIARY)
     .encode(
         x=alt.X("season:O", title="Season"),
         y=alt.Y("imdb_rating:Q", title="IMDB Rating", scale=alt.Scale(domain=[4, 10])),
