@@ -21,11 +21,14 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+st.title("The Simpsons: A Data Visualization Journey")
+
 row1 = st.columns(3)
 row2 = st.columns(3)
 for i, col in enumerate(row1):
     tile = col.container(width=500)
     tile.altair_chart([q1_chart, q2_chart, q3_chart][i], use_container_width=True)
+st.space("xxlarge")
 for i, col in enumerate(row2):
     tile = col.container(width=500)
     tile.altair_chart([q4_chart, q5_chart, q6_chart][i], use_container_width=True)

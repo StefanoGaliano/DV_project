@@ -126,7 +126,7 @@ chart_q3 = (
     (scatter + reg_line + reg_annot)
     .resolve_scale(color="independent", shape="independent") # Keep legends separate
     .properties(
-        width=750, height=450,
+        width=750, height=400,
         title=alt.TitleParams(
             "Q3 — Correlation: Quality vs. Popularity",
             subtitle=[

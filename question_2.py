@@ -120,7 +120,7 @@ chart_q2 = (
     alt.layer(band_v, range_v, line_v, lbl_v)#, locs_bar, era_annot_v)
     .properties(
         width=800, 
-        height=350,
+        height=400,
         title=alt.TitleParams(
             "Q2 — Evolution of US Viewership and Location Variety",
             subtitle=[

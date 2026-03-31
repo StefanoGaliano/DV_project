@@ -77,7 +77,7 @@ hm_text = (
 chart_q5 = (
     (heatmap + hm_text)
     .properties(
-        width=760, height=420,
+        width=760, height=400,
         title=alt.TitleParams(
             "Q5 — Season Viewer Patterns",
             subtitle=[

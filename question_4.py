@@ -37,7 +37,7 @@ weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", 
 thu_sun = ["Thursday", "Sunday"]
 day_order = weekdays
 
-base = alt.Chart(df, width=200, height=350)
+base = alt.Chart(df).properties(height=260, width=150)
 
 violin = (
     base

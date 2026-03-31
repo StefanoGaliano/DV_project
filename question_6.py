@@ -265,7 +265,7 @@ if season_lines is not None:
     chart_q6 = (
         alt.layer(bar_chars, bar_lbl_q6, line_locs, locs_lbl)
         .properties(
-            width=780, height=320,
+            width=780, height=400,
             title=alt.TitleParams(
                 "Q6 — Production Complexity Trends (Seasons 1-26)",
                 subtitle=[
