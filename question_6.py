@@ -3,31 +3,42 @@ import pandas as pd
 import numpy as np
 import altair as alt
 
+from conf import HOMER_COLOR_SCHEME
+from util import gradient
+
 warnings.filterwarnings("ignore")
 os.makedirs("outputs", exist_ok=True)
 
 # ─── colour palette (Okabe-Ito, colour-blind safe) ────────────────────────────
-C_GOLDEN  = "#E69F00"
-C_MIDDLE  = "#0072B2"
-C_MODERN  = "#D55E00"
-C_ACCENT  = "#009E73"
-C_NEUTRAL = "#999999"
+PRIMARY = HOMER_COLOR_SCHEME["primary"]
+SECONDARY = HOMER_COLOR_SCHEME["secondary"]
+TERTIARY = HOMER_COLOR_SCHEME["tertiary"]
+ACCENT = HOMER_COLOR_SCHEME["alternative_accent"]
 
-ERA_ORDER  = ["Golden Era (S1-9)", "Middle Era (S10-18)", "Modern Era (S19-28)"]
-ERA_COLORS = [C_GOLDEN, C_MIDDLE, C_MODERN]
+# C_GOLDEN  = "#E69F00"
+# C_MIDDLE  = "#0072B2"
+# C_MODERN  = "#D55E00"
+# C_ACCENT  = "#009E73"
+# C_NEUTRAL = "#999999"
 
-def era_label(s):
-    if s <= 9:    return "Golden Era (S1-9)"
-    elif s <= 18: return "Middle Era (S10-18)"
-    else:         return "Modern Era (S19-28)"
+# ERA_ORDER  = ["Golden Era (S1-9)", "Middle Era (S10-18)", "Modern Era (S19-28)"]
+# ERA_COLORS = [C_GOLDEN, C_MIDDLE, C_MODERN]
 
-ERA_SCALE = alt.Scale(domain=ERA_ORDER, range=ERA_COLORS)
+color_scale = alt.Scale(domain=[6.5, 8.5], range=gradient(TERTIARY, PRIMARY, int((8.5-6.5)*10)))
 
-def era_color(legend=True):
-    return alt.Color(
-        "era:N", title="Era", scale=ERA_SCALE,
-        legend=alt.Legend(orient="top") if legend else None,
-    )
+
+# def era_label(s):
+#     if s <= 9:    return "Golden Era (S1-9)"
+#     elif s <= 18: return "Middle Era (S10-18)"
+#     else:         return "Modern Era (S19-28)"
+
+# ERA_SCALE = alt.Scale(domain=ERA_ORDER, range=ERA_COLORS)
+
+# def era_color(legend=True):
+#     return alt.Color(
+#         "era:N", title="Era", scale=ERA_SCALE,
+#         legend=alt.Legend(orient="top") if legend else None,
+#     )
 
 TITLE_FONT = 14
 AXIS_FONT  = 11
@@ -38,7 +49,6 @@ AXIS_FONT  = 11
 
 eps   = pd.read_csv("data/outputs/simpsons_episodes_clean.csv")
 eps["original_air_date"] = pd.to_datetime(eps["original_air_date"])
-eps["era"] = eps["season"].apply(era_label)
 
 chars = pd.read_csv("data/outputs/simpsons_characters_clean.csv")
 locs  = pd.read_csv("data/outputs/simpsons_locations_clean.csv")
@@ -133,7 +143,7 @@ else:
 # ─────────────────────────────────────────────────────────────────────────────
 
 season = (
-    eps.groupby(["season","era"])
+    eps.groupby("season")
     .agg(
         avg_rating   = ("imdb_rating",            "mean"),
         min_rating   = ("imdb_rating",            "min"),
@@ -206,7 +216,7 @@ if season_lines is not None:
                     scale=alt.Scale(domain=[0, max_chars + 5])),
             color=alt.Color(
                 "avg_rating:Q", title="Avg IMDB",
-                scale=alt.Scale(scheme="brownbluegreen", domain=[6.5, 8.5]),
+                scale=color_scale,
                 legend=alt.Legend(orient="right"),
             ),
         )
@@ -226,8 +236,8 @@ if season_lines is not None:
     # 4. STANDARDIZED ORANGE LINE (Locations)
     line_locs = (
         alt.Chart(season_filtered)
-        .mark_line(color="#E67E22", strokeWidth=2.5, 
-                   point=alt.OverlayMarkDef(size=30, filled=True, color="#E67E22"))
+        .mark_line(color=ACCENT, strokeWidth=2.5, 
+                   point=alt.OverlayMarkDef(size=30, filled=True, color=ACCENT))
         .encode(
             x=alt.X("season:O"),
             y=alt.Y("scaled_locs:Q"),
@@ -240,7 +250,7 @@ if season_lines is not None:
     # 5. LINE LABELS (Orange labels - positioned below points)
     locs_lbl = (
         alt.Chart(season_filtered)
-        .mark_text(fontSize=8, color="#E67E22", fontWeight="bold", dy=12)
+        .mark_text(fontSize=8, color=ACCENT, fontWeight="bold", dy=12)
         .encode(
             x=alt.X("season:O"),
             y=alt.Y("scaled_locs:Q"),
@@ -255,7 +265,7 @@ if season_lines is not None:
     chart_q6 = (
         alt.layer(bar_chars, bar_lbl_q6, line_locs, locs_lbl)
         .properties(
-            width=780, height=320,
+            width=780, height=400,
             title=alt.TitleParams(
                 "Q6 — Production Complexity Trends (Seasons 1-26)",
                 subtitle=[
