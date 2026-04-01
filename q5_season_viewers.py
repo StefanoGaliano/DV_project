@@ -3,7 +3,7 @@
 import altair as alt
 import pandas as pd
 
-from conf import HOMER_COLOR_SCHEME
+from conf import SIMPSONS_COLOR_SCHEME
 
 
 df = pd.read_csv("data/outputs/simpsons_episodes_clean.csv")
@@ -15,7 +15,7 @@ season_average_viewers = (
         mean_viewers="mean(us_viewers_in_millions)",
         groupby=["season"],
     )
-    .mark_line(color=HOMER_COLOR_SCHEME["secondary"])
+    .mark_line(color=SIMPSONS_COLOR_SCHEME["secondary"])
     .encode(
         x=alt.X("season:O", title="Season"),
         y=alt.Y("mean_viewers:Q", title="Average US Viewers (Millions)"),
@@ -28,7 +28,7 @@ season_max_viewers = (
         max_viewers="max(us_viewers_in_millions)",
         groupby=["season"],
     )
-    .mark_line(color=HOMER_COLOR_SCHEME["primary"])
+    .mark_line(color=SIMPSONS_COLOR_SCHEME["primary"])
     .encode(
         x=alt.X("season:O", title="Season"),
         y=alt.Y("max_viewers:Q", title="Max US Viewers (Millions)"),
@@ -41,7 +41,7 @@ season_min_viewers = (
         min_viewers="min(us_viewers_in_millions)",
         groupby=["season"],
     )
-    .mark_line(color=HOMER_COLOR_SCHEME["alternative_accent"])
+    .mark_line(color=SIMPSONS_COLOR_SCHEME["alternative_accent"])
     .encode(
         x=alt.X("season:O", title="Season"),
         y=alt.Y("min_viewers:Q", title="Min US Viewers (Millions)"),
