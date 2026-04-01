@@ -240,10 +240,7 @@ if season_lines is not None:
                    point=alt.OverlayMarkDef(size=30, filled=True, color=ACCENT))
         .encode(
             x=alt.X("season:O"),
-            y=alt.Y("scaled_locs:Q"),
-        )
-        .transform_calculate(
-            scaled_locs=f"datum.avg_locs * {safe_zone_factor}"
+            y=alt.Y("avg_locs:Q"),
         )
     )
 
@@ -253,11 +250,8 @@ if season_lines is not None:
         .mark_text(fontSize=8, color=ACCENT, fontWeight="bold", dy=12)
         .encode(
             x=alt.X("season:O"),
-            y=alt.Y("scaled_locs:Q"),
+            y=alt.Y("avg_locs:Q"),
             text=alt.Text("avg_locs_lbl:N"),
-        )
-        .transform_calculate(
-            scaled_locs=f"datum.avg_locs * {safe_zone_factor}"
         )
     )
 

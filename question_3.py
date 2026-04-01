@@ -135,12 +135,6 @@ chart_q3 = (
             fontSize=TITLE_FONT, subtitleFontSize=11, subtitleColor="#FF82C1",
         ),
     )
-    .configure_legend(
-        fillColor="white",
-        strokeColor="#DDD",
-        cornerRadius=5,
-        padding=10
-    )
     .configure_view(stroke=None)
 )
 

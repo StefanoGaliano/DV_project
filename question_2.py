@@ -130,12 +130,6 @@ chart_q2 = (
         ),
     )
     .configure_view(stroke=None)
-    .configure_legend(
-        strokeColor='#DDD',
-        cornerRadius=5,
-        fillColor='white',
-        padding=10
-    )
 )
 
 chart_q2.save("outputs/q2_viewership_final.html")

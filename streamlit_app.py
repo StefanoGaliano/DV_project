@@ -36,5 +36,3 @@ st.space("xxlarge")
 for i, col in enumerate(row2):
     tile = col.container(width=500)
     tile.altair_chart([q4_chart, q5_chart, q6_chart][i], use_container_width=True)
-
-st.write("What")

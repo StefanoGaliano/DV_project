@@ -58,7 +58,7 @@ heatmap = (
 # IMDB rating as text in each cell
 hm_text = (
     alt.Chart(hm_data)
-    .mark_text(fontSize=6.5, fontWeight="bold")
+    .mark_text(fontSize=6.5)#, fontWeight="bold")
     .encode(
         x=alt.X("number_in_season:O"),
         y=alt.Y("season:O", sort=alt.SortOrder("ascending")),

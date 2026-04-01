@@ -121,7 +121,7 @@ chart_q1_clean = (
             subtitle=[
                 "Shaded Area: 1-STD Range · Faint Dots: Individual Episodes"
             ],
-            fontSize=16, subtitleFontSize=11, subtitleColor="#ff82c1"
+            fontSize=16, subtitleFontSize=11, subtitleColor=TERTIARY
         )
     )
     .configure_view(stroke=None)
