@@ -122,12 +122,11 @@ chart_q2 = (
         width=800, 
         height=400,
         title=alt.TitleParams(
-            "Q2 — Evolution of US Viewership and Location Variety",
+            "Q2 — Evolution of US Viewership by Season",
             subtitle=[
-                "Numbers above dots = Avg Viewers (Millions) · Vertical Rules = Min-Max Range per Season",
-                "Area = STD Range"
+                "Shaded Area: 1-STD Range · Vertical Rules = Min-Max Range per Season"
             ],
-            fontSize=TITLE_FONT, subtitleFontSize=10, subtitleColor="#FF82C1",
+            fontSize=TITLE_FONT, subtitleFontSize=11, subtitleColor="#FF82C1",
         ),
     )
     .configure_view(stroke=None)

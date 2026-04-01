@@ -5,7 +5,7 @@ import numpy as np
 import re
 import os
 
-os.makedirs("outputs", exist_ok=True)
+os.makedirs("data/outputs", exist_ok=True)
 
 
 df = pd.read_csv("data/simpsons_episodes.csv")
@@ -322,9 +322,9 @@ print("\nraw_character_text / raw_location_text title-cased where ALL-CAPS.")
 
 
 REF_FILES = {
-    "episode_id"   : "outputs/simpsons_episodes_clean.csv",
-    "character_id" : "outputs/simpsons_characters_clean.csv",
-    "location_id"  : "outputs/simpsons_locations_clean.csv",
+    "episode_id"   : "data/outputs/simpsons_episodes_clean.csv",
+    "character_id" : "data/outputs/simpsons_characters_clean.csv",
+    "location_id"  : "data/outputs/simpsons_locations_clean.csv",
 }
 
 print("\nForeign key validation:")

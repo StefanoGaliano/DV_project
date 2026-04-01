@@ -119,19 +119,12 @@ chart_q1_clean = (
         title=alt.TitleParams(
             "Q1 — Evolution of IMDB Ratings by Season",
             subtitle=[
-                "Numbers above dots represent average season ratings.",
-                "Line = Season Average · Shaded Area = 1-STD Range"
+                "Shaded Area: 1-STD Range · Faint Dots: Individual Episodes"
             ],
             fontSize=16, subtitleFontSize=11, subtitleColor="#ff82c1"
         )
     )
     .configure_view(stroke=None)
-    .configure_legend(
-        cornerRadius=5,
-        fillColor='white',
-        strokeColor='#DDD',
-        padding=10
-    )
 )
 
 chart_q1_clean.save("outputs/q1_ratings_clean.html")

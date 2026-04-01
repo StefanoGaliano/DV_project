@@ -81,10 +81,10 @@ chart_q5 = (
         title=alt.TitleParams(
             "Q5 — Season Viewer Patterns",
             subtitle=[
-                "Cell colour = US viewers (blue, darker = more viewers) · "
+                "Cell colour = US viewers (pink, darker = more viewers) · "
                 "Cell text = US viewers (millions)",
             ],
-            fontSize=TITLE_FONT, subtitleFontSize=9, subtitleColor="#FF82C1",
+            fontSize=TITLE_FONT, subtitleFontSize=11, subtitleColor="#FF82C1",
         ),
     )
 )

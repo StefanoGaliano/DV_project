@@ -269,10 +269,10 @@ if season_lines is not None:
             title=alt.TitleParams(
                 "Extra — Production Complexity Trends (Seasons 1-26) - Did they stop trying?",
                 subtitle=[
-                    "Bars = Avg Characters per Episode · Orange Line = Avg Locations per Episode (Normalized Scale)",
+                    "Bars = Avg Characters per Episode · Line = Avg Locations per Episode (Normalized Scale)",
                     "Labels represent actual counts · Seasons 27-28 excluded due to missing script data."
                 ],
-                fontSize=TITLE_FONT, subtitleFontSize=10, subtitleColor="#FF82C1",
+                fontSize=TITLE_FONT, subtitleFontSize=11, subtitleColor="#FF82C1",
             ),
         )
         .configure_view(stroke=None)

@@ -130,10 +130,9 @@ chart_q3 = (
         title=alt.TitleParams(
             "Q3 — Correlation: Quality vs. Popularity",
             subtitle=[
-                "The dashed line shows the general downward trend as the show aged.",
-                "Bluer points represent later seasons, while yellower points are from earlier seasons.",
+                "Pinker points represent later seasons, while yellower points are from earlier seasons.",
             ],
-            fontSize=TITLE_FONT, subtitleFontSize=10, subtitleColor="#FF82C1",
+            fontSize=TITLE_FONT, subtitleFontSize=11, subtitleColor="#FF82C1",
         ),
     )
     .configure_legend(

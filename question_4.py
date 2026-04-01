@@ -89,11 +89,11 @@ chart_q4 = (
         title=alt.TitleParams(
             "Q4 — Viewership Distribution by Airing Day",
             subtitle=[
-                "Violion plot showing distribution of US viewers for episodes aired on Thursdays and Sundays.",
+                "Distribution of US viewers for episodes aired on Thursdays and Sundays.",
                 "Numbers represent average viewership for each day.",
                 "Episodes aired on other days of the week are not shown due to insufficient data."
             ],
-            fontSize=TITLE_FONT, subtitleFontSize=10, subtitleColor="#FF82C1",
+            fontSize=TITLE_FONT, subtitleFontSize=11, subtitleColor="#FF82C1",
         ),
     )
 )
