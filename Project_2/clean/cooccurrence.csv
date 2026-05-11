@@ -1,0 +1,383 @@
+character_id_a,name_a,character_id_b,name_b,episode_count
+1,Marge Simpson,2,Homer Simpson,563
+2,Homer Simpson,9,Lisa Simpson,562
+2,Homer Simpson,8,Bart Simpson,562
+1,Marge Simpson,8,Bart Simpson,561
+1,Marge Simpson,9,Lisa Simpson,561
+8,Bart Simpson,9,Lisa Simpson,560
+2,Homer Simpson,17,Moe Szyslak,376
+8,Bart Simpson,17,Moe Szyslak,375
+1,Marge Simpson,17,Moe Szyslak,375
+9,Lisa Simpson,17,Moe Szyslak,374
+2,Homer Simpson,25,Milhouse Van Houten,323
+8,Bart Simpson,25,Milhouse Van Houten,322
+1,Marge Simpson,25,Milhouse Van Houten,322
+9,Lisa Simpson,25,Milhouse Van Houten,322
+1,Marge Simpson,165,Lenny Leonard,319
+2,Homer Simpson,165,Lenny Leonard,319
+8,Bart Simpson,165,Lenny Leonard,317
+9,Lisa Simpson,165,Lenny Leonard,317
+2,Homer Simpson,71,Chief Wiggum,316
+1,Marge Simpson,71,Chief Wiggum,315
+9,Lisa Simpson,71,Chief Wiggum,314
+8,Bart Simpson,71,Chief Wiggum,314
+3,Seymour Skinner,8,Bart Simpson,296
+2,Homer Simpson,3,Seymour Skinner,296
+1,Marge Simpson,3,Seymour Skinner,296
+3,Seymour Skinner,9,Lisa Simpson,295
+1,Marge Simpson,170,Carl Carlson,281
+2,Homer Simpson,170,Carl Carlson,281
+2,Homer Simpson,11,Ned Flanders,280
+1,Marge Simpson,11,Ned Flanders,280
+8,Bart Simpson,11,Ned Flanders,280
+8,Bart Simpson,170,Carl Carlson,280
+9,Lisa Simpson,170,Carl Carlson,279
+9,Lisa Simpson,11,Ned Flanders,278
+2,Homer Simpson,101,Nelson Muntz,275
+9,Lisa Simpson,101,Nelson Muntz,274
+8,Bart Simpson,101,Nelson Muntz,274
+1,Marge Simpson,101,Nelson Muntz,274
+2,Homer Simpson,31,Grampa Simpson,265
+9,Lisa Simpson,31,Grampa Simpson,264
+1,Marge Simpson,31,Grampa Simpson,264
+8,Bart Simpson,31,Grampa Simpson,264
+165,Lenny Leonard,170,Carl Carlson,260
+17,Moe Szyslak,165,Lenny Leonard,257
+9,Lisa Simpson,15,C. Montgomery Burns,240
+2,Homer Simpson,15,C. Montgomery Burns,240
+1,Marge Simpson,15,C. Montgomery Burns,239
+8,Bart Simpson,15,C. Montgomery Burns,239
+2,Homer Simpson,139,Krusty the Clown,236
+8,Bart Simpson,139,Krusty the Clown,235
+1,Marge Simpson,139,Krusty the Clown,235
+9,Lisa Simpson,211,Kent Brockman,234
+8,Bart Simpson,211,Kent Brockman,234
+9,Lisa Simpson,139,Krusty the Clown,234
+2,Homer Simpson,211,Kent Brockman,234
+1,Marge Simpson,211,Kent Brockman,233
+17,Moe Szyslak,71,Chief Wiggum,230
+17,Moe Szyslak,170,Carl Carlson,229
+25,Milhouse Van Houten,101,Nelson Muntz,213
+17,Moe Szyslak,25,Milhouse Van Houten,213
+3,Seymour Skinner,25,Milhouse Van Houten,208
+2,Homer Simpson,332,Dr. Julius Hibbert,207
+9,Lisa Simpson,332,Dr. Julius Hibbert,206
+1,Marge Simpson,332,Dr. Julius Hibbert,206
+8,Bart Simpson,332,Dr. Julius Hibbert,205
+3,Seymour Skinner,17,Moe Szyslak,202
+11,Ned Flanders,17,Moe Szyslak,198
+9,Lisa Simpson,208,Apu Nahasapeemapetilon,196
+8,Bart Simpson,208,Apu Nahasapeemapetilon,196
+71,Chief Wiggum,165,Lenny Leonard,196
+2,Homer Simpson,208,Apu Nahasapeemapetilon,196
+1,Marge Simpson,208,Apu Nahasapeemapetilon,196
+3,Seymour Skinner,101,Nelson Muntz,191
+3,Seymour Skinner,71,Chief Wiggum,186
+8,Bart Simpson,33,Announcer,185
+2,Homer Simpson,33,Announcer,185
+9,Lisa Simpson,33,Announcer,184
+1,Marge Simpson,33,Announcer,184
+25,Milhouse Van Houten,71,Chief Wiggum,183
+17,Moe Szyslak,31,Grampa Simpson,183
+11,Ned Flanders,71,Chief Wiggum,180
+9,Lisa Simpson,14,Waylon Smithers,179
+2,Homer Simpson,14,Waylon Smithers,179
+15,C. Montgomery Burns,17,Moe Szyslak,178
+1,Marge Simpson,14,Waylon Smithers,178
+8,Bart Simpson,14,Waylon Smithers,178
+25,Milhouse Van Houten,165,Lenny Leonard,173
+71,Chief Wiggum,170,Carl Carlson,171
+17,Moe Szyslak,101,Nelson Muntz,169
+17,Moe Szyslak,211,Kent Brockman,169
+11,Ned Flanders,165,Lenny Leonard,168
+15,C. Montgomery Burns,165,Lenny Leonard,168
+14,Waylon Smithers,15,C. Montgomery Burns,166
+17,Moe Szyslak,139,Krusty the Clown,164
+2,Homer Simpson,404,Groundskeeper Willie,163
+1,Marge Simpson,404,Groundskeeper Willie,163
+8,Bart Simpson,404,Groundskeeper Willie,162
+9,Lisa Simpson,404,Groundskeeper Willie,162
+71,Chief Wiggum,211,Kent Brockman,160
+3,Seymour Skinner,165,Lenny Leonard,160
+11,Ned Flanders,25,Milhouse Van Houten,160
+3,Seymour Skinner,11,Ned Flanders,158
+31,Grampa Simpson,71,Chief Wiggum,157
+71,Chief Wiggum,139,Krusty the Clown,154
+71,Chief Wiggum,101,Nelson Muntz,154
+31,Grampa Simpson,165,Lenny Leonard,154
+17,Moe Szyslak,332,Dr. Julius Hibbert,154
+15,C. Montgomery Burns,170,Carl Carlson,153
+25,Milhouse Van Houten,170,Carl Carlson,151
+25,Milhouse Van Houten,31,Grampa Simpson,149
+165,Lenny Leonard,211,Kent Brockman,147
+11,Ned Flanders,170,Carl Carlson,146
+11,Ned Flanders,101,Nelson Muntz,146
+101,Nelson Muntz,165,Lenny Leonard,145
+17,Moe Szyslak,208,Apu Nahasapeemapetilon,145
+31,Grampa Simpson,170,Carl Carlson,141
+3,Seymour Skinner,170,Carl Carlson,140
+15,C. Montgomery Burns,71,Chief Wiggum,140
+71,Chief Wiggum,332,Dr. Julius Hibbert,139
+3,Seymour Skinner,31,Grampa Simpson,139
+9,Lisa Simpson,240,Mayor Joe Quimby,137
+139,Krusty the Clown,165,Lenny Leonard,137
+8,Bart Simpson,240,Mayor Joe Quimby,137
+2,Homer Simpson,240,Mayor Joe Quimby,137
+1,Marge Simpson,240,Mayor Joe Quimby,136
+15,C. Montgomery Burns,31,Grampa Simpson,135
+3,Seymour Skinner,211,Kent Brockman,135
+31,Grampa Simpson,101,Nelson Muntz,135
+25,Milhouse Van Houten,139,Krusty the Clown,134
+3,Seymour Skinner,404,Groundskeeper Willie,133
+14,Waylon Smithers,17,Moe Szyslak,133
+9,Lisa Simpson,140,Rev. Timothy Lovejoy,132
+8,Bart Simpson,140,Rev. Timothy Lovejoy,132
+2,Homer Simpson,140,Rev. Timothy Lovejoy,132
+11,Ned Flanders,31,Grampa Simpson,132
+1,Marge Simpson,140,Rev. Timothy Lovejoy,131
+170,Carl Carlson,211,Kent Brockman,130
+1,Marge Simpson,40,Edna Krabappel-Flanders,129
+2,Homer Simpson,40,Edna Krabappel-Flanders,129
+8,Bart Simpson,40,Edna Krabappel-Flanders,129
+9,Lisa Simpson,40,Edna Krabappel-Flanders,129
+15,C. Montgomery Burns,25,Milhouse Van Houten,128
+165,Lenny Leonard,332,Dr. Julius Hibbert,128
+101,Nelson Muntz,170,Carl Carlson,126
+3,Seymour Skinner,139,Krusty the Clown,126
+25,Milhouse Van Houten,211,Kent Brockman,125
+11,Ned Flanders,332,Dr. Julius Hibbert,125
+71,Chief Wiggum,208,Apu Nahasapeemapetilon,125
+139,Krusty the Clown,211,Kent Brockman,124
+11,Ned Flanders,15,C. Montgomery Burns,124
+2,Homer Simpson,801,Comic Book Guy,123
+101,Nelson Muntz,139,Krusty the Clown,123
+9,Lisa Simpson,801,Comic Book Guy,123
+1,Marge Simpson,801,Comic Book Guy,123
+8,Bart Simpson,801,Comic Book Guy,123
+17,Moe Szyslak,33,Announcer,123
+3,Seymour Skinner,15,C. Montgomery Burns,122
+14,Waylon Smithers,165,Lenny Leonard,122
+139,Krusty the Clown,170,Carl Carlson,122
+31,Grampa Simpson,211,Kent Brockman,120
+11,Ned Flanders,211,Kent Brockman,119
+25,Milhouse Van Houten,208,Apu Nahasapeemapetilon,118
+11,Ned Flanders,208,Apu Nahasapeemapetilon,117
+11,Ned Flanders,139,Krusty the Clown,117
+25,Milhouse Van Houten,332,Dr. Julius Hibbert,116
+31,Grampa Simpson,139,Krusty the Clown,116
+3,Seymour Skinner,332,Dr. Julius Hibbert,116
+165,Lenny Leonard,208,Apu Nahasapeemapetilon,115
+170,Carl Carlson,332,Dr. Julius Hibbert,114
+3,Seymour Skinner,208,Apu Nahasapeemapetilon,113
+25,Milhouse Van Houten,404,Groundskeeper Willie,111
+14,Waylon Smithers,170,Carl Carlson,111
+15,C. Montgomery Burns,211,Kent Brockman,111
+101,Nelson Muntz,211,Kent Brockman,111
+15,C. Montgomery Burns,101,Nelson Muntz,111
+101,Nelson Muntz,404,Groundskeeper Willie,110
+17,Moe Szyslak,240,Mayor Joe Quimby,108
+3,Seymour Skinner,40,Edna Krabappel-Flanders,107
+139,Krusty the Clown,332,Dr. Julius Hibbert,106
+31,Grampa Simpson,332,Dr. Julius Hibbert,106
+33,Announcer,71,Chief Wiggum,106
+14,Waylon Smithers,71,Chief Wiggum,106
+17,Moe Szyslak,404,Groundskeeper Willie,106
+25,Milhouse Van Houten,33,Announcer,105
+15,C. Montgomery Burns,139,Krusty the Clown,104
+101,Nelson Muntz,332,Dr. Julius Hibbert,103
+211,Kent Brockman,332,Dr. Julius Hibbert,101
+14,Waylon Smithers,31,Grampa Simpson,100
+170,Carl Carlson,208,Apu Nahasapeemapetilon,99
+139,Krusty the Clown,208,Apu Nahasapeemapetilon,99
+1,Marge Simpson,1078,Gary Chalmers,98
+71,Chief Wiggum,240,Mayor Joe Quimby,98
+2,Homer Simpson,1078,Gary Chalmers,98
+8,Bart Simpson,1078,Gary Chalmers,98
+9,Lisa Simpson,1078,Gary Chalmers,97
+71,Chief Wiggum,404,Groundskeeper Willie,96
+31,Grampa Simpson,208,Apu Nahasapeemapetilon,96
+3,Seymour Skinner,1078,Gary Chalmers,95
+14,Waylon Smithers,25,Milhouse Van Houten,94
+31,Grampa Simpson,33,Announcer,94
+25,Milhouse Van Houten,40,Edna Krabappel-Flanders,94
+211,Kent Brockman,240,Mayor Joe Quimby,93
+208,Apu Nahasapeemapetilon,211,Kent Brockman,92
+17,Moe Szyslak,801,Comic Book Guy,92
+3,Seymour Skinner,33,Announcer,92
+15,C. Montgomery Burns,332,Dr. Julius Hibbert,92
+14,Waylon Smithers,211,Kent Brockman,92
+11,Ned Flanders,140,Rev. Timothy Lovejoy,91
+17,Moe Szyslak,140,Rev. Timothy Lovejoy,91
+33,Announcer,165,Lenny Leonard,91
+101,Nelson Muntz,208,Apu Nahasapeemapetilon,90
+15,C. Montgomery Burns,208,Apu Nahasapeemapetilon,89
+11,Ned Flanders,33,Announcer,89
+3,Seymour Skinner,14,Waylon Smithers,89
+25,Milhouse Van Houten,240,Mayor Joe Quimby,89
+165,Lenny Leonard,404,Groundskeeper Willie,89
+71,Chief Wiggum,140,Rev. Timothy Lovejoy,88
+33,Announcer,139,Krusty the Clown,88
+165,Lenny Leonard,240,Mayor Joe Quimby,88
+11,Ned Flanders,14,Waylon Smithers,87
+33,Announcer,101,Nelson Muntz,86
+17,Moe Szyslak,40,Edna Krabappel-Flanders,86
+33,Announcer,170,Carl Carlson,86
+15,C. Montgomery Burns,33,Announcer,85
+33,Announcer,211,Kent Brockman,85
+11,Ned Flanders,404,Groundskeeper Willie,84
+25,Milhouse Van Houten,801,Comic Book Guy,83
+3,Seymour Skinner,240,Mayor Joe Quimby,83
+208,Apu Nahasapeemapetilon,332,Dr. Julius Hibbert,82
+25,Milhouse Van Houten,140,Rev. Timothy Lovejoy,81
+165,Lenny Leonard,801,Comic Book Guy,80
+71,Chief Wiggum,801,Comic Book Guy,80
+40,Edna Krabappel-Flanders,101,Nelson Muntz,80
+170,Carl Carlson,404,Groundskeeper Willie,79
+31,Grampa Simpson,404,Groundskeeper Willie,78
+40,Edna Krabappel-Flanders,71,Chief Wiggum,78
+14,Waylon Smithers,101,Nelson Muntz,77
+170,Carl Carlson,801,Comic Book Guy,77
+139,Krusty the Clown,240,Mayor Joe Quimby,77
+101,Nelson Muntz,240,Mayor Joe Quimby,76
+14,Waylon Smithers,139,Krusty the Clown,76
+140,Rev. Timothy Lovejoy,165,Lenny Leonard,76
+101,Nelson Muntz,801,Comic Book Guy,76
+139,Krusty the Clown,404,Groundskeeper Willie,75
+11,Ned Flanders,240,Mayor Joe Quimby,75
+25,Milhouse Van Houten,1078,Gary Chalmers,75
+101,Nelson Muntz,1078,Gary Chalmers,74
+11,Ned Flanders,801,Comic Book Guy,74
+170,Carl Carlson,240,Mayor Joe Quimby,73
+11,Ned Flanders,40,Edna Krabappel-Flanders,72
+3,Seymour Skinner,801,Comic Book Guy,72
+211,Kent Brockman,404,Groundskeeper Willie,71
+33,Announcer,332,Dr. Julius Hibbert,70
+15,C. Montgomery Burns,240,Mayor Joe Quimby,70
+208,Apu Nahasapeemapetilon,404,Groundskeeper Willie,69
+140,Rev. Timothy Lovejoy,170,Carl Carlson,69
+139,Krusty the Clown,140,Rev. Timothy Lovejoy,68
+40,Edna Krabappel-Flanders,165,Lenny Leonard,67
+33,Announcer,208,Apu Nahasapeemapetilon,67
+3,Seymour Skinner,140,Rev. Timothy Lovejoy,67
+14,Waylon Smithers,332,Dr. Julius Hibbert,67
+15,C. Montgomery Burns,404,Groundskeeper Willie,66
+14,Waylon Smithers,208,Apu Nahasapeemapetilon,66
+31,Grampa Simpson,240,Mayor Joe Quimby,65
+31,Grampa Simpson,140,Rev. Timothy Lovejoy,64
+208,Apu Nahasapeemapetilon,240,Mayor Joe Quimby,63
+17,Moe Szyslak,1078,Gary Chalmers,62
+14,Waylon Smithers,33,Announcer,61
+140,Rev. Timothy Lovejoy,332,Dr. Julius Hibbert,61
+139,Krusty the Clown,801,Comic Book Guy,61
+40,Edna Krabappel-Flanders,170,Carl Carlson,61
+40,Edna Krabappel-Flanders,211,Kent Brockman,60
+40,Edna Krabappel-Flanders,404,Groundskeeper Willie,60
+101,Nelson Muntz,140,Rev. Timothy Lovejoy,60
+240,Mayor Joe Quimby,332,Dr. Julius Hibbert,59
+140,Rev. Timothy Lovejoy,208,Apu Nahasapeemapetilon,59
+332,Dr. Julius Hibbert,404,Groundskeeper Willie,59
+404,Groundskeeper Willie,1078,Gary Chalmers,57
+211,Kent Brockman,801,Comic Book Guy,57
+140,Rev. Timothy Lovejoy,211,Kent Brockman,57
+165,Lenny Leonard,1078,Gary Chalmers,56
+71,Chief Wiggum,1078,Gary Chalmers,55
+14,Waylon Smithers,240,Mayor Joe Quimby,55
+15,C. Montgomery Burns,40,Edna Krabappel-Flanders,55
+332,Dr. Julius Hibbert,801,Comic Book Guy,54
+15,C. Montgomery Burns,140,Rev. Timothy Lovejoy,52
+31,Grampa Simpson,40,Edna Krabappel-Flanders,52
+208,Apu Nahasapeemapetilon,801,Comic Book Guy,51
+31,Grampa Simpson,801,Comic Book Guy,51
+15,C. Montgomery Burns,801,Comic Book Guy,51
+170,Carl Carlson,1078,Gary Chalmers,49
+139,Krusty the Clown,1078,Gary Chalmers,48
+14,Waylon Smithers,404,Groundskeeper Willie,47
+240,Mayor Joe Quimby,404,Groundskeeper Willie,47
+40,Edna Krabappel-Flanders,332,Dr. Julius Hibbert,46
+40,Edna Krabappel-Flanders,139,Krusty the Clown,44
+33,Announcer,404,Groundskeeper Willie,44
+240,Mayor Joe Quimby,801,Comic Book Guy,43
+31,Grampa Simpson,1078,Gary Chalmers,43
+11,Ned Flanders,1078,Gary Chalmers,43
+33,Announcer,240,Mayor Joe Quimby,42
+404,Groundskeeper Willie,801,Comic Book Guy,42
+15,C. Montgomery Burns,1078,Gary Chalmers,41
+33,Announcer,40,Edna Krabappel-Flanders,41
+40,Edna Krabappel-Flanders,208,Apu Nahasapeemapetilon,40
+140,Rev. Timothy Lovejoy,404,Groundskeeper Willie,40
+33,Announcer,801,Comic Book Guy,40
+14,Waylon Smithers,40,Edna Krabappel-Flanders,39
+33,Announcer,140,Rev. Timothy Lovejoy,39
+40,Edna Krabappel-Flanders,140,Rev. Timothy Lovejoy,38
+140,Rev. Timothy Lovejoy,240,Mayor Joe Quimby,38
+14,Waylon Smithers,140,Rev. Timothy Lovejoy,38
+211,Kent Brockman,1078,Gary Chalmers,37
+40,Edna Krabappel-Flanders,1078,Gary Chalmers,36
+140,Rev. Timothy Lovejoy,801,Comic Book Guy,36
+208,Apu Nahasapeemapetilon,1078,Gary Chalmers,35
+332,Dr. Julius Hibbert,1078,Gary Chalmers,30
+14,Waylon Smithers,801,Comic Book Guy,30
+40,Edna Krabappel-Flanders,240,Mayor Joe Quimby,28
+240,Mayor Joe Quimby,1078,Gary Chalmers,27
+14,Waylon Smithers,1078,Gary Chalmers,27
+40,Edna Krabappel-Flanders,801,Comic Book Guy,25
+801,Comic Book Guy,1078,Gary Chalmers,25
+140,Rev. Timothy Lovejoy,1078,Gary Chalmers,21
+33,Announcer,1078,Gary Chalmers,20
+1,Marge Simpson,153,Sideshow Bob,17
+8,Bart Simpson,153,Sideshow Bob,17
+9,Lisa Simpson,153,Sideshow Bob,17
+2,Homer Simpson,153,Sideshow Bob,17
+71,Chief Wiggum,153,Sideshow Bob,14
+139,Krusty the Clown,153,Sideshow Bob,13
+153,Sideshow Bob,211,Kent Brockman,9
+17,Moe Szyslak,153,Sideshow Bob,9
+25,Milhouse Van Houten,153,Sideshow Bob,8
+153,Sideshow Bob,165,Lenny Leonard,8
+140,Rev. Timothy Lovejoy,153,Sideshow Bob,8
+33,Announcer,153,Sideshow Bob,7
+3,Seymour Skinner,153,Sideshow Bob,6
+153,Sideshow Bob,170,Carl Carlson,6
+40,Edna Krabappel-Flanders,153,Sideshow Bob,6
+14,Waylon Smithers,153,Sideshow Bob,5
+31,Grampa Simpson,153,Sideshow Bob,5
+153,Sideshow Bob,240,Mayor Joe Quimby,5
+153,Sideshow Bob,332,Dr. Julius Hibbert,5
+11,Ned Flanders,153,Sideshow Bob,5
+153,Sideshow Bob,208,Apu Nahasapeemapetilon,4
+15,C. Montgomery Burns,153,Sideshow Bob,4
+101,Nelson Muntz,153,Sideshow Bob,4
+153,Sideshow Bob,404,Groundskeeper Willie,3
+153,Sideshow Bob,1078,Gary Chalmers,3
+240,Mayor Joe Quimby,241,Entire Town,1
+170,Carl Carlson,3592,Robert Pinsky,1
+101,Nelson Muntz,3592,Robert Pinsky,1
+139,Krusty the Clown,3592,Robert Pinsky,1
+153,Sideshow Bob,801,Comic Book Guy,1
+1,Marge Simpson,3592,Robert Pinsky,1
+1,Marge Simpson,241,Entire Town,1
+1,Marge Simpson,2739,ABBA,1
+31,Grampa Simpson,3592,Robert Pinsky,1
+14,Waylon Smithers,241,Entire Town,1
+15,C. Montgomery Burns,241,Entire Town,1
+3,Seymour Skinner,3592,Robert Pinsky,1
+15,C. Montgomery Burns,2739,ABBA,1
+25,Milhouse Van Houten,241,Entire Town,1
+25,Milhouse Van Houten,3592,Robert Pinsky,1
+25,Milhouse Van Houten,2739,ABBA,1
+9,Lisa Simpson,2739,ABBA,1
+9,Lisa Simpson,3592,Robert Pinsky,1
+8,Bart Simpson,3592,Robert Pinsky,1
+9,Lisa Simpson,241,Entire Town,1
+8,Bart Simpson,2739,ABBA,1
+40,Edna Krabappel-Flanders,241,Entire Town,1
+165,Lenny Leonard,3592,Robert Pinsky,1
+8,Bart Simpson,241,Entire Town,1
+71,Chief Wiggum,2739,ABBA,1
+2,Homer Simpson,241,Entire Town,1
+2,Homer Simpson,2739,ABBA,1
+2,Homer Simpson,3592,Robert Pinsky,1
+332,Dr. Julius Hibbert,3592,Robert Pinsky,1
+332,Dr. Julius Hibbert,2739,ABBA,1
+404,Groundskeeper Willie,3592,Robert Pinsky,1
+1078,Gary Chalmers,3592,Robert Pinsky,1
