@@ -11,7 +11,10 @@ st.markdown(
     "across seasons and episodes."
 )
 
-df=pd.read_csv("Project_2/clean/graph3_duos.csv")
+
+B
+
+df=pd.read_csv("data/clean/graph3_duos.csv")
 
 color_scale = alt.Scale(
     domain=["Homer Simpson", "Marge Simpson", "Bart Simpson", "Lisa Simpson", "Moe Szyslak", "C. Montgomery Burns"],

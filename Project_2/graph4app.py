@@ -4,7 +4,7 @@ import streamlit as st
  
 alt.data_transformers.disable_max_rows()
  
-lines = pd.read_csv('Project_2/clean/clean_script_lines.csv')
+lines = pd.read_csv('data/clean/clean_script_lines.csv')
  
 SEASON = 11
 EPISODE = 2
